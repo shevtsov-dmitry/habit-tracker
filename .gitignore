@@ -1,6 +1,6 @@
 ### CLIENT
-gtk/target
-gtk/Cargo.lock
+client/target
+client/Cargo.lock
 
 ### SERVER
 
@@ -10,9 +10,10 @@ gtk/Cargo.lock
 .m2
 
 # Build output directies
-/target
+server/app/target
+server/app/bin
 */target
-/build
+server/app/build
 */build
 
 # IntelliJ specific files/directories
