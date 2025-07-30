@@ -1,5 +1,6 @@
 package io.habit_tracker.user.v0;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.habit_tracker.session.v0.Session;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -23,6 +24,7 @@ public class User {
   private String name;
   private String email;
 
+  @JsonIgnore
   @OneToMany
   @JoinColumn(name = "session_id")
   private List<Session> sessions;
