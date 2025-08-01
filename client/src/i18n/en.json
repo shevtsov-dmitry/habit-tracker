@@ -1,0 +1,6 @@
+{
+  "sessionManagement": {
+    "start": "Start",
+    "stop": "Stop"
+  }
+}
