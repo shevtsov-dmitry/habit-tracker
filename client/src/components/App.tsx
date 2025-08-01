@@ -1,11 +1,17 @@
 import "../App.css";
+import '../i18n/i18n.js';
+
+import SessionManagement from "./session_management/SessionManagement.tsx";
+import TopPanel from "./top_panel/TopPanel.tsx";
 
 function App() {
-  return (
-    <main className="container">
-      <h1 className="bg-red-500 px-10 py-10 font-bold text-white">App</h1>
-    </main>
-  );
+
+    return (
+        <main className="min-w-screen min-h-screen bg-pink-100 dark:bg-cyan-700">
+            <TopPanel/>
+            <SessionManagement/>
+        </main>
+    );
 }
 
 export default App;

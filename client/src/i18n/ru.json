@@ -1,5 +1,5 @@
 {
-  "sessionManagement": {
+  "session_management": {
     "start": "Начать",
     "stop": "Остановить"
   }

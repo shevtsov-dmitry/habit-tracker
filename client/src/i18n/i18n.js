@@ -1,20 +1,20 @@
 import i18n from 'i18next';
-import {initReactI18next} from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpBackend from 'i18next-http-backend';
+import { initReactI18next } from 'react-i18next';
+
+import en from './en.json';
+import ru from './ru.json';
 
 i18n
-    .use(HttpBackend)
-    .use(LanguageDetector)
-    .use(initReactI18next)
+    .use(initReactI18next) // ✅ This binds i18n instance to react-i18next
     .init({
-        fallbackLng: 'en',
-        debug: false,
-        interpolation: {
-            escapeValue: false,
+        resources: {
+            en: { translation: en },
+            ru: { translation: ru }
         },
-        backend: {
-            loadPath: '/locales/{{lng}}.json'
+        lng: 'en', // or use navigator.language
+        fallbackLng: 'en',
+        interpolation: {
+            escapeValue: false // react already does escaping
         }
     });
 
