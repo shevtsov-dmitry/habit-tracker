@@ -1,6 +1,7 @@
 {
   "session_management": {
     "start": "Start",
-    "stop": "Stop"
+    "pause": "Pause",
+    "end": "End"
   }
 }
