@@ -14,6 +14,7 @@ function App() {
       }}
     >
       <TopPanel />
+      <div className="my-2"/>
       <SessionManagement />
     </main>
   );

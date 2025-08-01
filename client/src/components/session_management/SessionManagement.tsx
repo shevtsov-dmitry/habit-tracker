@@ -12,6 +12,7 @@ const SessionManagement = () => {
     }
 
 
+
     const OperationButtons = () => {
 
         const style = {
@@ -34,8 +35,8 @@ const SessionManagement = () => {
     }
 
     return (
-        <div>
-            {/*<SessionStatus/>*/}
+        <div className="w-fit h-fit p-8 rounded-4xl shadow-2xl bg-neutral-50 m-auto">
+            <SessionStatus/>
             <OperationButtons/>
         </div>
     );
