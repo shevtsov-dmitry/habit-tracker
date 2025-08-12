@@ -15,6 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Data
+@Table(name = "\"user\"")
 public class User {
 
   @Id
