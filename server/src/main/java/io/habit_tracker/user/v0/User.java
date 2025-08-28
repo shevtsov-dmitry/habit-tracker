@@ -8,6 +8,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.LinkedList;
 import java.util.List;
 
 @Entity
@@ -28,5 +29,5 @@ public class User {
   @JsonIgnore
   @OneToMany
   @JoinColumn(name = "session_id")
-  private List<Session> sessions;
+  private List<Session> sessions = new LinkedList<>();
 }
