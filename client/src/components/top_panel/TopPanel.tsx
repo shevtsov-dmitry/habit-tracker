@@ -1,18 +1,10 @@
-import {useTranslation} from "react-i18next";
+import { ReactElement } from "react";
 
-const TopPanel = () => {
+const TopPanel = (): ReactElement => {
 
-    const {i18n} = useTranslation()
-
-    return (
-        <div className={"shadow-md h-[2%] w-full bg-white"}>
-            
-            <div className={"flex flex-col text-sm text-neutral-700"}>
-                <button onClick={() => i18n.changeLanguage('en')}>EN (english)</button>
-                <button onClick={() => i18n.changeLanguage('ru')}>RU (русский)</button>
-            </div>
-        </div>
-    );
+  return <div>
+    <h1 className="font-bold text-8xl text-black">val</h1>
+  </div>
 }
 
-export default TopPanel;
+export default TopPanel
