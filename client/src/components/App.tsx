@@ -1,11 +1,11 @@
-import { ReactElement } from "react";
-import TopPanel from "./top_panel/TopPanel";
+import "../App.css";
 
-const App = (): ReactElement => (
-  <>
-  <h1>header</h1>
-    <TopPanel/>
-  </>
-);
+function App() {
+  return (
+    <main className="container">
+      <h1 className="bg-red-500 px-10 py-10 font-bold text-white">App</h1>
+    </main>
+  );
+}
 
-export default App
+export default App;
