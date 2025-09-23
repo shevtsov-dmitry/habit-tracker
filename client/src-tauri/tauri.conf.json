@@ -1,20 +1,20 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Habit Tracker",
+  "productName": "habit-tracker-client",
   "version": "0.1.0",
-  "identifier": "com.cloud-notes.app",
+  "identifier": "com.shd.habit-tracker-client",
   "build": {
-    "beforeDevCommand": "pnpm dev",
+    "beforeDevCommand": "bun run dev",
     "devUrl": "http://localhost:1420",
-    "beforeBuildCommand": "pnpm build",
+    "beforeBuildCommand": "bun run build",
     "frontendDist": "../dist"
   },
   "app": {
     "windows": [
       {
-        "title": "Habit Tracker",
-        "width": 1000,
-        "height": 800
+        "title": "habit-tracker-client",
+        "width": 800,
+        "height": 600
       }
     ],
     "security": {

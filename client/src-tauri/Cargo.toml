@@ -1,9 +1,9 @@
 [package]
-name = "habit_tracker"
+name = "habit-tracker-client"
 version = "0.1.0"
-description = "Application to track your habbits"
-authors = ["Shevtsov Dmitry"]
-edition = "2024"
+description = "A Tauri App"
+authors = ["you"]
+edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -11,7 +11,7 @@ edition = "2024"
 # The `_lib` suffix may seem redundant but it is necessary
 # to make the lib name unique and wouldn't conflict with the bin name.
 # This seems to be only an issue on Windows, see https://github.com/rust-lang/cargo/issues/8519
-name = "tailwind_tauri_lib"
+name = "habit_tracker_client_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
