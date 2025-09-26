@@ -1,15 +1,22 @@
 import { ReactElement } from "react";
 import { useNavigate } from "react-router";
-import { Person, Home, Settings } from "@mui/icons-material";
 
 const NavigationPanel = (): ReactElement => {
   const navigate = useNavigate();
 
   return (
-    <div className={"flex w-full justify-around"}>
-      <Home className={"text-white"} onClick={() => navigate("/")} />
-      <Person className={"text-white"} onClick={() => navigate("/account")} />
-      <Settings className={"text-white"} onClick={() => navigate("/settings")} />
+    <div
+      flex
+      justify-around
+      items-center
+      w="full max-laptop:[500px]"
+      h-fit
+      py-5
+      bg="~ dark:orange-900 blue-300"
+    >
+      <button onClick={() => navigate("/")}>Home</button>
+      <button onClick={() => navigate("/account")}>Account</button>
+      <button onClick={() => navigate("/settings")}>Settings</button>
     </div>
   );
 };
