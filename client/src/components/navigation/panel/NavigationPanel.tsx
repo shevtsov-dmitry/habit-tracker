@@ -4,33 +4,38 @@ import { useNavigate } from "react-router";
 const NavigationPanel = (): ReactElement => {
   const navigate = useNavigate();
 
+  const styles = {
+    imageBottomIcon:
+      "contrast-75 hover:contrast-150 hover:cursor-pointer hover:scale-105 rounded-3xl p-5 transition",
+  };
+
   return (
     <div
       className={
-        "flex justify-around items-center w-full max-laptop:w-[500px] h-fit bg-purple-500"
+        "flex justify-around items-center w-full max-laptop:w-[500px] py-2 "
       }
     >
-      <button onClick={() => navigate("/")}>
+      <div className={"h-fit"} onClick={() => navigate("/")}>
         <img
           src="images/navigation-bar/home.png"
-          className=""
+          className={styles.imageBottomIcon}
           alt="open home"
         />
-      </button>
-      <button onClick={() => navigate("/account")}>
+      </div>
+      <div className={"h-fit"} onClick={() => navigate("/account")}>
         <img
           src="images/navigation-bar/account.png"
-          className=""
+          className={styles.imageBottomIcon}
           alt="open account"
         />
-      </button>
-      <button onClick={() => navigate("/settings")}>
+      </div>
+      <div className={"h-fit"} onClick={() => navigate("/settings")}>
         <img
           src="images/navigation-bar/settings.png"
-          className=""
+          className={styles.imageBottomIcon}
           alt="open account"
         />
-      </button>
+      </div>
     </div>
   );
 };

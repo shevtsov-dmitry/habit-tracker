@@ -8,14 +8,24 @@ import SettingsTab from "./components/navigation/tabs/SettingsTab.tsx";
 
 const App = (): ReactElement => {
   return (
-    <main className={"min-h-screen max-w-full "}>
-      <div className={"min-h-full w-full"}>
-        <Routes>
-          <Route path="/" element={<HomeTab />} />
-          <Route path="/account" element={<AccountTab />} />
-          <Route path="/settings" element={<SettingsTab />} />
-        </Routes>
-        <NavigationPanel />
+    <main
+      className={"h-screen max-w-full"}
+      style={{
+        backgroundImage:
+          "linear-gradient(to top, #241f22, #282328, #2c272f, #2f2c36, #30313d, #2d323e, #2b333e, #28343e, #243137, #222d31, #21292a, #202525)",
+      }}
+    >
+      <div className={"h-full max-w-full flex flex-col"}>
+        <div className={"flex-1"}>
+          <Routes>
+            <Route path="/" element={<HomeTab />} />
+            <Route path="/account" element={<AccountTab />} />
+            <Route path="/settings" element={<SettingsTab />} />
+          </Routes>
+        </div>
+        <div className={"flex-0"}>
+          <NavigationPanel />
+        </div>
       </div>
     </main>
   );
