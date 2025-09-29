@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router'
 const NavigationPanel = (): ReactElement => {
     const navigate = useNavigate()
 
+    const styles = {
+        bottomIcon: 'select-none w-32',
+    }
+
     return (
         <div
             className={
@@ -13,21 +17,21 @@ const NavigationPanel = (): ReactElement => {
             <div className={'h-fit'} onClick={() => navigate('/')}>
                 <img
                     src="images/navigation-bar/home.png"
-                    className="bottom-icon"
+                    className={styles.bottomIcon}
                     alt="open home"
                 />
             </div>
             <div className={'h-fit'} onClick={() => navigate('/account')}>
                 <img
                     src="images/navigation-bar/account.png"
-                    className="bottom-icon"
+                    className={styles.bottomIcon}
                     alt="open account"
                 />
             </div>
             <div className={'h-fit'} onClick={() => navigate('/settings')}>
                 <img
                     src="images/navigation-bar/settings.png"
-                    className="bottom-icon"
+                    className={styles.bottomIcon}
                     alt="open account"
                 />
             </div>

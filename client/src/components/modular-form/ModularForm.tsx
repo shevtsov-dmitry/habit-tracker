@@ -75,23 +75,33 @@ interface SocialMediaIconsBlockProps {
 
 export const SocialMediaIconsBlock = ({
     socialMediaIcons,
-    customIconsHeight = 'h-32',
+    customIconsHeight = 'h-[2%]',
 }: SocialMediaIconsBlockProps): ReactElement => {
+    const styles = {
+        icon: `${customIconsHeight} select-none`,
+    }
+
     return (
         <div
-            className={
-                'flex w-full flex-row justify-around gap-[3%] ' +
-                customIconsHeight
-            }
+            className={`flex w-full flex-row justify-around gap-[3%] ${customIconsHeight}`}
         >
             {socialMediaIcons.includes(SocialMedia.GOOGLE) && (
-                <img src="images/social media/google.svg"></img>
+                <img
+                    className={styles.icon}
+                    src="images/social media/google.svg"
+                ></img>
             )}
             {socialMediaIcons.includes(SocialMedia.VK) && (
-                <img src="images/social media/vk.svg"></img>
+                <img
+                    className={styles.icon}
+                    src="images/social media/vk.svg"
+                ></img>
             )}
             {socialMediaIcons.includes(SocialMedia.TWITTER) && (
-                <img src="images/social media/twitter.svg"></img>
+                <img
+                    className={styles.icon}
+                    src="images/social media/twitter.svg"
+                ></img>
             )}
         </div>
     )
