@@ -3,7 +3,7 @@ import {ReactElement, useEffect, useRef} from 'react'
 /**
  * Example timeOffset format for string "+03:00"
  */
-interface TimerProps {
+interface ClockProps {
     timeOffset: string
     useSeconds: boolean
 }
@@ -20,10 +20,10 @@ class ClockIds {
     }
 }
 
-const Timer = ({
+const Clock = ({
                    timeOffset = '+00:00',
                    useSeconds = true,
-               }: TimerProps): ReactElement => {
+               }: ClockProps): ReactElement => {
     const timeOffsetNumber: number =
         parseOffset(timeOffset) || parseOffset('+00:00')!
 
@@ -186,4 +186,4 @@ const Timer = ({
     )
 }
 
-export default Timer
+export default Clock
