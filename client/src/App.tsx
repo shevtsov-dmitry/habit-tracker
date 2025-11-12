@@ -1,10 +1,10 @@
 import { ReactElement } from "react";
 import { Routes, Route } from "react-router";
 
-import HomeTab from "./components/navigation/tabs/HomeTab.tsx";
-import AccountTab from "./components/navigation/tabs/AccountTab.tsx";
-import SettingsTab from "./components/navigation/tabs/SettingsTab.tsx";
-import NavigationPanel from "./components/navigation/panel/NavigationPanel.tsx";
+import HomeTab from "./components/tabs/HomeTab.tsx";
+import AccountTab from "./components/tabs/AccountTab.tsx";
+import SettingsTab from "./components/tabs/SettingsTab.tsx";
+import NavigationPanel from "./components/panel/NavigationPanel.tsx";
 
 const App = (): ReactElement => {
   return (
