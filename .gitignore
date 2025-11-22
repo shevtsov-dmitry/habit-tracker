@@ -1,6 +1,7 @@
 build
+out
 .fastRequest
 .vscode
 .idea
-    .gradle
+.gradle
 /client/client.iml
